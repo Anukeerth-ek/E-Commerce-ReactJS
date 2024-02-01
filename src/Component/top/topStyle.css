@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+.TopCate {
+  position: relative;
+  margin-top: 30px;
+  text-align: center;
+  
+}
+.TopCate img {
+  width: 300px;
+  height: 250px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.TopCate .nametop {
+  position: relative;
+  width: 100%;
+}
+.TopCate .nametop span {
+  background: #0f3460;
+  color: #fff;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 50px;
+  margin: 5px;
+  position: absolute;
+  top: 0px;
+  z-index: 99;
+}
+.TopCate .nametop .tleft {
+  left: 0;
+}
+.TopCate .nametop .tright {
+  background-color: aliceblue;
+  color: black;
+  position: absolute;
+  right: 0;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.picked-product {
+  min-height: 350px;
+  margin-left: 15px;
+ 
+}
+.responsive .picked-img  img{
+  position: relative;
+  top: 50px;
+  left: 25px;
+  max-width: 150px;
+  max-height: 210px;
+  margin-bottom: 30px;
+  object-fit: contain;
+}
+.TopCate .order-btn {
+  background-color: #0B8692;
+  color: #fff;
+  width: 50%;
+  height: 45%;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 18px;
+  
+
+}
+@media (max-width: 820px ) {
+  .responsive {
+    width: 250px;
+    margin-left: 25px;
+  }
+   .responsive img{
+    max-width: 100px;
+  } 
+
+  .TopCate .nametop .tright {
+    background-color: aliceblue;
+    color: black;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-size: 12px;
+    max-width: 80px;
+  }
+}

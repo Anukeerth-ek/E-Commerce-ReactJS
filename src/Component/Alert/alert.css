@@ -1,0 +1,26 @@
+
+.popup-displayer {
+    background-color: #ff9800;
+    color: #fff;
+    position: fixed;
+    bottom: 20px;
+    z-index: 99999;
+    left: 40%;
+  padding: 10px 0 10px 18px;
+  border-radius: 3px;
+  z-index: 96500;
+  min-width: 300px; 
+  visibility: visible;
+}
+.popup-displayer i {
+    font-size: 19px;;
+}
+.popup-displayer span {
+    font-size: 15px;
+    margin-left: 8px;
+}
+
+/* _____________ */
+.hidden-alert {
+    visibility: hidden;
+}
