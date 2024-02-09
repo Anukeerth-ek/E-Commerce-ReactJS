@@ -37,7 +37,7 @@ function Navbar({cartItem}) {
 
                 <div className='navlink'>
                 <ul className={MobileMenu ? 'nav-links-MobileMenu': "link f_flex capitalize"} onClick={()=> setMobileMenu(false)}>
-                         <li className='common-nav'> <Link to = "/E-commerce-React-App/">Home</Link></li>          
+                         <li className='common-nav'> <Link to = "/E-commerce-React-App">Home</Link></li>          
                          <li className='common-nav'> <Link to = "/about">About</Link></li>
                          <li className='common-nav'> <Link to="/cart">Checkout</Link></li>
                          <li className='common-nav'> <Link to="/cart/myorders">My Orders</Link></li>

@@ -105,7 +105,7 @@ function App() {
                <Routes>
         
 
-               <Route path="/E-commerce-React-App/" element = {  <Pages  productItems = {productItems} addToCart = {addToCart}  
+               <Route path="/E-commerce-React-App" element = {  <Pages  productItems = {productItems} addToCart = {addToCart}  
                shopItems={shopItems}  renameCart={renameCart} loginChecker= {loginChecker}/>}/>
 
                <Route path="/cart" element={ <Cart  cartItem = {cartItem}  addToCart = {addToCart} decreaseQty = {decreaseQty} loginState = {loginState}
