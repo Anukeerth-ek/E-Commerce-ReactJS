@@ -1,7 +1,7 @@
 
 import './App.css';
 import React, { useState } from "react";
-import {BrowserRouter, Routes, Route, Link, useNavigate} from 'react-router-dom'
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import Header from "./My projects/Headers/Header";
 import Pages from "./Pages/Pages";
 import Data from './Component/flashDeals/Data'
@@ -48,7 +48,7 @@ function App() {
        const decreaseQty = (product)=>{
                  const productExit = cartItem.find((item)=> item.id === product.id)
                  if(productExit.qty === 1) {
-                      setCartItem(cartItem.filter((item)=> item.id != product.id))
+                      setCartItem(cartItem.filter((item)=> item.id !== product.id))
                  }
                  else {
                       setCartItem(cartItem.map((item)=> (item.id === product.id ? {...productExit, qty: productExit.qty -1 } : item )))
@@ -105,7 +105,7 @@ function App() {
                <Routes>
         
 
-               <Route path="/E-commerce-React-App" element = {  <Pages  productItems = {productItems} addToCart = {addToCart}  
+               <Route path="/" element = {  <Pages  productItems = {productItems} addToCart = {addToCart}  
                shopItems={shopItems}  renameCart={renameCart} loginChecker= {loginChecker}/>}/>
 
                <Route path="/cart" element={ <Cart  cartItem = {cartItem}  addToCart = {addToCart} decreaseQty = {decreaseQty} loginState = {loginState}
