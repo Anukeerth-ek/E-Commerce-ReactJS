@@ -25,7 +25,7 @@ function Navbar({cartItem}) {
         <header className='header'>
             <div className='container d_flex'>
             <div className={navbar ? 'logo-width': 'transform-navbar'}>
-               <h3>ShopEase</h3>  
+               <h3>Glimpse Shope</h3>  
                      
 
            </div>
