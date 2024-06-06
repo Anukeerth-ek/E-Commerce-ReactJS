@@ -106,6 +106,7 @@ input, button {
   margin-top: 5px;
   margin-bottom: 28px;
   background-color: #f6f9fc;
+  display: inline;
 }
 .category .left-side-photo {
   width: 330px;
@@ -448,30 +449,61 @@ input, button {
 /*_______________ MEDIA QUIERIES  ____________*/
 
 
-@media (max-width: 820px ) {
+@media only screen and (max-width: 767px) {
 
   /*____________ Category___________ css */
   .contentWidth {
-    width: 77%;
+    width: 90%;
   }
   .category {
-    width: 22%;
-   
-    height: 580px;
+  display: none;
   
   }
-  .category img {
-    width: 24px;
-    margin-top: 10px;
-   
+
+  /*___________ SlideCard____________ */
+  .responsive-slideCard {
+    display: flex;
+    width: 100%;
+    max-height: 300px;
+    margin-top: 50px;
+    /* flex-direction: column; */
+    justify-content: space-around;
   }
-  .category span {
-    margin: 10px 20px;
-    text-transform: capitalize;
-    font-size: 16px;
-  }
+.left {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
  
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* __________FLASH DEALS____________ */
 
